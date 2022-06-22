@@ -1,10 +1,22 @@
 import './App.css';
+import AboutPage from './Components/AboutPage';
+import ClassificationPage from './Components/ClassificationPage';
+import OpeningTimes from './Components/OpeningTimes';
+import React from "react";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-      </div>
+  
+    <div>
+
+      {/* < OpeningTimes />
+      < ClassificationPage /> */}
+      < AboutPage />
+
+    </div>
+
   );
 }
 
