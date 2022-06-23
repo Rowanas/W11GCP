@@ -1,10 +1,8 @@
 import React from 'react'
-import {useNavigate} from "react-router-dom";
-
-
+import { useNavigate } from "react-router-dom";
 
 const AboutPage = () => {
-    let navigate= useNavigate;
+    let navigate = useNavigate;
     return (
         <>
             <div className="Alex">
@@ -62,7 +60,7 @@ const AboutPage = () => {
                 <p>Mattg@gmail.co.uk</p>
             </div>
 
-            <button onClick= {() => {
+            <button onClick={() => {
                 navigate("/ClassificationPage");
             }}
             >
