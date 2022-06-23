@@ -10,10 +10,10 @@ function App() {
   return (
   
     <div>
-
-      {/* < OpeningTimes />
-      < ClassificationPage /> */}
+       {/* < OpeningTimes /> */}
+      < ClassificationPage />
       < AboutPage />
+      <GettingHerePage />
 
     </div>
 
