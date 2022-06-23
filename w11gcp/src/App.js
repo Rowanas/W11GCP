@@ -13,6 +13,8 @@ function App() {
        {/* < OpeningTimes /> */}
       < ClassificationPage />
       < AboutPage />
+      <GettingHerePage />
+
     </div>
 
   );
