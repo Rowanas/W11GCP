@@ -2,6 +2,7 @@ import './App.css';
 import AboutPage from './Components/AboutPage';
 import ClassificationPage from './Components/ClassificationPage';
 import OpeningTimes from './Components/OpeningTimes';
+import GettingHerePage from './Components/GettingHerePage'
 import React from "react";
 
 
