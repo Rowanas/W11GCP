@@ -1,13 +1,8 @@
 import React from 'react'
-import { Routes, Route, useNavigate } from 'react-router-dom';
-import ClassificationPage from './ClassificationPage';
+import {BrowserRouter as Router, Link} from 'react-router-dom';
+// import ClassificationPage from './ClassificationPage';
 
 const AboutPage = () => {
-    const navigate = useNavigate();
-    // const contactButton = document.querySelector("#contactPageButton");
-    const navigateToContacts = () => {
-        navigate("./ClassificationPage");
-    }
     return (
         <>
             <div className="Alex">
@@ -63,15 +58,6 @@ const AboutPage = () => {
                 <p>@MattyG</p>
                 <h2>Email address</h2>
                 <p>Mattg@gmail.co.uk</p>
-            </div>
-            <div>
-                <button onClick={navigateToContacts}>
-                    Contact Page
-                </button>
-                <Routes>
-
-                    <Route path='./ClassificationPage' element={<ClassificationPage />} />
-                </Routes>
             </div>
         </>
     );
