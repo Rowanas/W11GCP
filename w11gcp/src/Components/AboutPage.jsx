@@ -1,13 +1,10 @@
 import React from 'react'
-import { Routes, Route, useNavigate } from 'react-router-dom';
-import ClassificationPage from './ClassificationPage';
+import {useNavigate} from "react-router-dom";
+
+
 
 const AboutPage = () => {
-    const navigate = useNavigate();
-    // const contactButton = document.querySelector("#contactPageButton");
-    const navigateToContacts = () => {
-        navigate("./ClassificationPage");
-    }
+    let navigate= useNavigate;
     return (
         <>
             <div className="Alex">
@@ -64,15 +61,13 @@ const AboutPage = () => {
                 <h2>Email address</h2>
                 <p>Mattg@gmail.co.uk</p>
             </div>
-            <div>
-                <button onClick={navigateToContacts}>
-                    Contact Page
-                </button>
-                <Routes>
 
-                    <Route path='./ClassificationPage' element={<ClassificationPage />} />
-                </Routes>
-            </div>
+            <button onClick= {() => {
+                navigate("/ClassificationPage");
+            }}
+            >
+                Contents Page
+            </button>
         </>
     );
 }
