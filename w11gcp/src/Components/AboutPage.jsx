@@ -61,7 +61,7 @@ const AboutPage = () => {
             </div>
 
             <button onClick={() => {
-                navigate("/ClassificationPage");
+                navigate("/ClassificationPage.jsx");
             }}
             >
                 Contents Page

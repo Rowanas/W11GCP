@@ -1,19 +1,18 @@
 import './App.css';
-import AboutPage from './Components/AboutPage';
-import ClassificationPage from './Components/ClassificationPage';
+// import AboutPage from './Components/AboutPage';
+// import ClassificationPage from './Components/ClassificationPage';
 import React from "react";
+import AboutPage from './Components/AboutPage';
+import NavigationBar from './Components/NavigationBar';
 
 
 
 function App() {
   return (
-  
-    <div>
-       {/* < OpeningTimes /> */}
-      < ClassificationPage />
-      < AboutPage />
-      
 
+    <div>
+      {/* < ClassificationPage /> */}
+<NavigationBar />
     </div>
 
   );
