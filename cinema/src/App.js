@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import './header.jsx';
-import './navbar.jsx';
-import './gallery.jsx';
-import './footer.jsx';
+import './Header.jsx';
+import './Navbar.jsx';
+import './Gallery.jsx';
+import './Footer.jsx';
 
 function App() {
   return (
@@ -17,4 +17,3 @@ function App() {
 }
 
 export default App;
-
