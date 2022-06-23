@@ -5,7 +5,6 @@ import Train from "../Resources/Train.JPG";
 import CinemaMap from "../Resources/CinemaMap.JPG";
 import CinemaFront from "../Resources/CinemaFront.png";
 
-
 const GettingHerePage = () => {
     return (
         <>
