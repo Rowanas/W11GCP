@@ -1,5 +1,5 @@
 import React from "react";
-import CinemaSplash from "CinemaSplash.jpg";
+import CinemaSplash from "./CinemaSplash.jpg";
 
 function Gallery() {
     return (

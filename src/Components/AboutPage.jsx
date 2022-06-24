@@ -1,7 +1,6 @@
 import React from 'react'
-import {BrowserRouter as Router, Link} from 'react-router-dom';
-// import ClassificationPage from './ClassificationPage';
-
+import { Container, Row, Col } from "reactstrap";
+import NavBar from "NavBar";
 const AboutPage = () => {
     return (
         <>

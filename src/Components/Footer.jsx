@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "../NavBar.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; 
 import AboutPage from "./AboutPage";
-import OpeningTimes from "./Opening_Times";
+import OpeningTimes from "./OpeningTimes";
 
 const FooterBar = () => {
    
