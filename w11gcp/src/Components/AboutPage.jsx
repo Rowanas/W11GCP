@@ -1,8 +1,9 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
+import ClassificationPage from './ClassificationPage';
 
 const AboutPage = () => {
-    let navigate = useNavigate;
+    let navigate = useNavigate();
     return (
         <>
             <div className="Alex">
@@ -61,10 +62,9 @@ const AboutPage = () => {
             </div>
 
             <button onClick={() => {
-                navigate("/ClassificationPage");
+                navigate("/ClassificationPage.jsx");
             }}
-            >
-                Contents Page
+            >Contents Page
             </button>
         </>
     );
