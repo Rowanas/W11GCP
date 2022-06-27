@@ -1,8 +1,6 @@
 import React, {useState} from "react";
 import "../NavBar.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; 
-import AboutPage from "./AboutPage";
-import ClassificationPage from "./ClassificationPage";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const NavigationBar = () => {
     const [active, setActive] = useState("nav__menu");
@@ -13,13 +11,16 @@ const NavigationBar = () => {
 
         toggleIcon === "nav__toggler" ? setToggleIcon("nav__toggler toggle") : setToggleIcon("nav__toggler");
         }
-    return ( 
-        <Router>
+    return (
             <nav className="navBar">
-                <a href="#" className="nav__brand">CINEMA</a>
+                <h2 className="nav__brancd"><Link to="/HomePage.jsx" className="nav__brand">Cinema</Link></h2>
                 <ul className={active}>
-                    <li className="nav__items"><a href="./NavigationBar.jsx" className="nav__link">Home</a></li>
-                    <li className="nav__items"><Link to="/AboutPage.jsx" className="nav__link">About</Link></li>
+                    <li className="nav__items"><Link to="/HomePage.jsx" className="nav__link">Home</Link></li>
+                    <li className="nav__items"><Link to="/FilmsList.jsx" className="nav__link">Films</Link></li>
+                    <li className="nav__items"><Link to="/BookingPage.jsx" className="nav__link">Bookings</Link></li>
+                    <li className="nav__items"><Link to="/Screens.jsx" className="nav__link">Screens</Link></li>
+                    <li className="nav__items"><Link to="/GettingHerePage.jsx" className="nav__link">Getting Here</Link></li>
+                    <li className="nav__items"><Link to="/Comment.jsx" className="nav__link">Discussion Board</Link></li>
                     <li className="nav__items"><Link to="/ClassificationPage.jsx" className="nav__link">Classification</Link></li>
                 </ul>
                 <div onClick = {navToggle} className={toggleIcon}>
@@ -28,11 +29,6 @@ const NavigationBar = () => {
                     <div className="line3"></div>
                 </div>
             </nav>
-            <Routes>
-                <Route path="/AboutPage.jsx" element={<AboutPage/>}/>
-                <Route path="/ClassificationPage.jsx" element={<ClassificationPage/>}/>
-            </Routes>
-        </Router>
      );
 }
  
