@@ -4,6 +4,7 @@ import './App.css';
 import React from "react";
 import AboutPage from './Components/AboutPage';
 import NavigationBar from './Components/NavigationBar';
+import SearchBar from './Components/SearchBar';
 
 
 
@@ -13,6 +14,7 @@ function App() {
     <div>
       {/* < ClassificationPage /> */}
 <NavigationBar />
+<SearchBar />
     </div>
 
   );
