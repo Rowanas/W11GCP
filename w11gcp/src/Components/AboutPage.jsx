@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
+import ClassificationPage from './ClassificationPage';
 
 const AboutPage = () => {
     let navigate = useNavigate();
@@ -63,8 +64,7 @@ const AboutPage = () => {
             <button onClick={() => {
                 navigate("/ClassificationPage.jsx");
             }}
-            >
-                Contents Page
+            >Contents Page
             </button>
         </>
     );
