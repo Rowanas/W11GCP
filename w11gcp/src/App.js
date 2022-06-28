@@ -8,7 +8,6 @@ import NavigationBar from './Components/NavigationBar'
 import Footer from './Components/Footer';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
 import GettingHerePage from './Components/GettingHerePage';
-import FilmList from "./Components/FilmsList";
 import BookingsPage from "./Components/BookingPage";
 import Screens from "./Components/Screens";
 import Partners from "./Components/Partners";
@@ -25,7 +24,6 @@ function App() {
         <NavigationBar/>
           <Routes>
             <Route path="/HomePage.jsx" element={<HomePage/>}/>
-            <Route path="/FilmsList.jsx" element={<FilmList/>}/>
             <Route path="/BookingPage.jsx" element={<BookingsPage/>}/>
             <Route path="/Screens.jsx" element={<Screens/>}/>
             <Route path="/GettingHerePage.jsx" element={<GettingHerePage/>}/>
