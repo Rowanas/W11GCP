@@ -9,13 +9,11 @@ import Footer from './Components/Footer';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
 import GettingHerePage from './Components/GettingHerePage';
 import FilmList from "./Components/FilmsList";
-import BookingsPage from "./Components/BookingPage";
+import BookingsPage from "./Components/BookingPage/BookingPage";
 import Screens from "./Components/Screens";
 import Partners from "./Components/Partners";
 import Comment from "./Components/Comment";
 import ContactPage from "./Components/ContactPage";
-
-
 
 function App() {
   return (
