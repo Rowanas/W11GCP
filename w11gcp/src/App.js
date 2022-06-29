@@ -7,17 +7,14 @@ import NavigationBar from './Components/NavigationBar'
 import Footer from './Components/Footer';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
 import GettingHerePage from './Components/GettingHerePage';
-import FilmList from "./Components/FilmsList";
 import BookingsPage from "./Components/BookingPage/BookingPage";
 import Screens from "./Components/Screens";
 import Partners from "./Components/Partners";
 import Comment from "./Components/Comment";
 import ContactPage from "./Components/ContactPage";
-import films from "./Components/films.JSON"
-import Card from './Components/Card';
 import SearchBar from "./Components/SearchBar";
 import { useState } from 'react';
-import * as Fuse from './Components/fuse.js';
+
 
 function App() {
   return (
