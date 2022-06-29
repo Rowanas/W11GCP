@@ -7,7 +7,8 @@ import NavigationBar from './Components/NavigationBar'
 import Footer from './Components/Footer';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
 import GettingHerePage from './Components/GettingHerePage';
-import BookingsPage from "./Components/BookingPage";
+import FilmList from "./Components/FilmsList";
+import BookingsPage from "./Components/BookingPage/BookingPage";
 import Screens from "./Components/Screens";
 import Partners from "./Components/Partners";
 import Comment from "./Components/Comment";
@@ -18,45 +19,7 @@ import SearchBar from "./Components/SearchBar";
 import { useState } from 'react';
 import * as Fuse from './Components/fuse.js';
 
-
-  // const [data, setData] = useState(films);
-
-  // const searchData = (pattern) => {
-  //   if (!pattern) {
-  //     setData(films);
-  //     return;
-  //   }
-
-  //   const fuse = new Fuse(data, {
-  //     keys: ["title", "author"],
-  //   });
-
-  //   const result = fuse.search(pattern);
-  //   const matches = [];
-  //   if (!result.length) {
-  //     setData([]);
-  //   } else {
-  //     result.forEach(({item}) => {
-  //       matches.push(item);
-  //     });
-  //     setData(matches);
-  //   }
-  // };  
-//     <div>
-//       <SearchBar
-//         placeholder="Search Term"
-//         onChange={(e) => console.log(e.target.value)}
-//        />
-//       <div className="Container">
-//         {films.map((item) => (
-//           <Card {...item} key={item.name} />
-//         ))}
-//       </div>
-//     </div>
-    
-//   );
-// }
-function App() { 
+function App() {
   return (
 
     <div className="page-container">
