@@ -75,7 +75,7 @@ const WhatsAround = () => {
                     <Row><p>Littlehempston, Totnes TQ9 6LY</p></Row>
                     <Row><p><strong>hours</strong><br />Tuesday – Sunday<br />11am – 3pm + 5pm - 11pm</p></Row>
                     <Row><p>Sunday<br />Closed</p></Row>
-                    <Row><p><strong>phone</strong><br />01803862316</p></Row>
+                    <Row><p><strong>phone</strong><br />01803 862316</p></Row>
                 </Col>
             </Container>
 
