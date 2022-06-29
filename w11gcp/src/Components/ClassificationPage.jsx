@@ -6,6 +6,7 @@ import NavigationBar from "./NavigationBar";
 const ClassificationPage = () => {
     return (
         <>
+        
         <p/>
         <Container>
             <Row>
