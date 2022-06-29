@@ -9,11 +9,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import GettingHerePage from './Components/GettingHerePage';
 import BookingsPage from "./Components/BookingPage/BookingPage";
 import Screens from "./Components/Screens";
-import Partners from "./Components/Partners";
+import WhatsAround from "./Components/WhatsAround";
 import Comment from "./Components/Comment";
 import ContactPage from "./Components/ContactPage";
 import SearchBar from "./Components/SearchBar";
-import { useState } from 'react';
 
 
 function App() {
@@ -32,7 +31,7 @@ function App() {
             <Route path="/Comment.jsx" element={<Comment/>}/>
             <Route path="/ClassificationPage.jsx" element={<ClassificationPage/>}/>
             <Route path="/AboutPage.jsx" element={<AboutPage/>}/>
-            <Route path="/Partners.jsx" element={<Partners/>}/>
+            <Route path="/WhatsAround.jsx" element={<WhatsAround/>}/>
             <Route path="/ContactPage.jsx" element={<ContactPage/>}/>
           
           </Routes>

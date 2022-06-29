@@ -1,8 +1,8 @@
 import "../Footer.css"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; 
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const Footer = () => {
-    return ( 
+    return (
         <div className="main-footer">
             <div className="container">
                 <div className="row">
@@ -18,7 +18,7 @@ const Footer = () => {
                         <h4>Things</h4>
                         <ul className="list-unstyled">
                             <li><Link to="/AboutPage.jsx" className="nav__link">About</Link></li>
-                            <li><Link to="/Partners.jsx" className="nav__link">Partners</Link></li>
+                            <li><Link to="/WhatsAround.jsx" className="nav__link">Whats around us</Link></li>
                             <li><Link to="/ContactPage.jsx" className="nav__link">Contact Page</Link></li>
                         </ul>
                     </div>
@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default Footer;
