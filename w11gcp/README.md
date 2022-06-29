@@ -6,7 +6,7 @@ The software we used for coding was [Visual Studio Code](https://code.visualstud
 
 Our [Jira board is here](https://rowanatwork.atlassian.net/jira/software/projects/W11GCP/boards/3).
 
-Some of our initial designs were made using
+Some of our initial designs were made using [Design IO](https://www.design-io.com/). 
 
 ## Available Scripts
 
