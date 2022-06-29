@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+The software we used for coding was [Visual Studio Code](https://code.visualstudio.com/). 
+
+Our [Jira board is here](https://rowanatwork.atlassian.net/jira/software/projects/W11GCP/boards/3).
+
+Some of our initial designs were made using
+
 ## Available Scripts
 
 In the project directory, you can run:
