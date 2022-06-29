@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const commentsSchema = new Schema(
+// With a spot of validation in here, plus the validation on the entry fields
+const commentsSchema = Schema(
     {
     title:    {
         type: String,

@@ -8,8 +8,8 @@ router.get('/getAllComments', async (request, response, next) => {
         response.contentType("application/json")
             .status(200)
             .json(await Comment.find().populate());
-    } catch (err) {
-        next(err);
+    } catch (error) {
+        next(error);
     }
 });
 
@@ -24,8 +24,8 @@ router.get('/getCommentById/:id', async (request, response, next) => {
         } else {
             next({ statusCode: 404, message: `Comment with id ${request.params.id} does not exist` });
         }
-    } catch (err) {
-        next(err);
+    } catch (error) {
+        next(error);
     }
 });
 
@@ -40,8 +40,8 @@ router.post('/createComment', async (request, response, next) => {
         await comment.save();
 
         response.status(201).json(comment);
-    } catch (err) {
-        next(err);
+    } catch (error) {
+        next(error);
     }
 });
 
@@ -56,8 +56,8 @@ router.delete('/deleteComment/:id', async (request, response, next) => {
         } else {
             next({ statusCode: 404, message: `Comment with id ${request.params.id} does not exist` });
         }
-    } catch (err) {
-        next(err);
+    } catch (error) {
+        next(error);
     }
 });
 
