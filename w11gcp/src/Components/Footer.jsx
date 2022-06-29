@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className="col">
                         <h4>Cinema</h4>
                         <ul className="list-unstyled">
-                            <li>0208 444 4444</li>
+                            <li>01392 444 4444</li>
                             <li>Location Devon</li>
                             <li>122 Cinema Street</li>
                         </ul>

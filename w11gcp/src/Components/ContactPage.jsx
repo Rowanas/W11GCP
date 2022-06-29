@@ -26,6 +26,7 @@ const [emailSent, setEmailSent] = useState(false);
             <Row><button onClick={submit}>Send Message</button></Row>
             <Row> <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span></Row>
                 <Row><h2>Postal address: QA Cinemas, Bartholemew Street, Exeter, EX4 1RD</h2></Row>
+                <Row><h2>Phone number: 01392 444 4444</h2></Row>
               
                 </Col>
                 </Container>
