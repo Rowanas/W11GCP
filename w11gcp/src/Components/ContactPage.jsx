@@ -6,10 +6,10 @@ import { submit} from 'react';
 
 
 const ContactPage = () => {
-const [name, setName] = useState('');
-const [email, setEmail] = useState('');
-const [message, setMessage] = useState('');
-const [emailSent, setEmailSent] = useState(false);
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [emailSent, setEmailSent] = useState(false);
     let navigate = useNavigate();
     return ( 
         <>
