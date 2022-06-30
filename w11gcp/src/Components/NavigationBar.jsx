@@ -20,7 +20,7 @@ const NavigationBar = () => {
                     <li className="nav__items"><Link to="/BookingPage" className="nav__link">Bookings</Link></li>
                     <li className="nav__items"><Link to="/Screens" className="nav__link">Screens</Link></li>
                     <li className="nav__items"><Link to="/GettingHerePage" className="nav__link">Getting Here</Link></li>
-                    <li className="nav__items"><Link to="/Comment" className="nav__link">Discussion Board</Link></li>
+                    <li className="nav__items"><Link to="/CommentsPage/CommentsPage" className="nav__link">Discussion Board</Link></li>
                     <li className="nav__items"><Link to="/ClassificationPage" className="nav__link">Classification</Link></li>
                 </ul>
                 <div onClick = {navToggle} className={toggleIcon}>
