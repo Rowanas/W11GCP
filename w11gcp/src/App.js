@@ -13,6 +13,8 @@ import ClassificationPage from './Components/ClassificationPage';
 import AboutPage from './Components/AboutPage';
 import WhatsAround from "./Components/WhatsAround";
 import ContactPage from "./Components/ContactPage";
+import FilmList1 from "./Components/FilmList1";
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
     <div className="page-container">
       <div className="content-wrap">
       <Router>
+        <FilmList1/>
         <NavigationBar/>
           <Routes>
             <Route index path="/" element={<HomePage/>}/>
