@@ -1,13 +1,8 @@
 import React from 'react'
 import { Container, Row, Col } from "reactstrap";
 import { useNavigate } from "react-router-dom";
-import ClassificationPage from './ClassificationPage';
-
-
-    
 
 const Partners = () => {
-    let navigate = useNavigate();
     return ( 
         <>
        
@@ -54,12 +49,6 @@ const Partners = () => {
                 <Row><p>Queen Street</p></Row>
                 </Col>
                 </Container>
-
-            <button onClick={() => {
-                navigate("/ContactPage.jsx");
-            }}
-            >Contact Page
-            </button>
         </>
     );
 }

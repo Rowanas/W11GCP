@@ -1,14 +1,12 @@
 import React from 'react'
 import { Container, Row, Col } from "reactstrap";
 import { useNavigate } from "react-router-dom";
-import ClassificationPage from './ClassificationPage';
 
 const AboutPage = () => {
     let navigate = useNavigate();
     
     return (
         <>
-       
         <p/>
             <Container>
             <Col>

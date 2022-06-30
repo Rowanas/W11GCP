@@ -1,9 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from "reactstrap";
-import { useNavigate } from "react-router-dom";
 
 const ContactPage = () => {
-    let navigate = useNavigate();
     return ( 
         <>
        
