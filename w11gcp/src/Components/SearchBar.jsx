@@ -1,15 +1,21 @@
 import React from "react";
 
 function SearchBar({ handleSearch }) {
-    return (
-
+return (
+    <>
         <div>
-            <button link to = "/FilmsList.jsx" onClick = {handleSearch}>Search</button>
-            <input placeholder = "Search Term" type="text" onChange={handleSearch} />
+            <a href="http://localhost:3000/FilmsPage">
+                <button id="Button">Search</button>
+                <script type="text/javascript"></script>
+            </a>
+
+            <input placeholder="Search Term" type="text" onChange={handleSearch} />
 
         </div>
-    )
+    </>
+)
 
 }
 
 export default SearchBar;
+// onClick = {handleSearch}>Search</button>

@@ -13,12 +13,8 @@ import ClassificationPage from './Components/ClassificationPage';
 import AboutPage from './Components/AboutPage';
 import WhatsAround from "./Components/WhatsAround";
 import ContactPage from "./Components/ContactPage";
-<<<<<<< HEAD
-import SearchBar from "./Components/SearchBar";
 import FilmList1 from "./Components/FilmList1";
 
-=======
->>>>>>> 046a1ddf19f261c26b2c5e825fa205eb30e92ab7
 
 function App() {
   return (

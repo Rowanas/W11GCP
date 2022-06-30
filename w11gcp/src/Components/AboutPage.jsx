@@ -83,10 +83,6 @@ const AboutPage = () => {
                 </Row>
 
 
-
-
-                
-
                 <Col>
                 <Row><h2>We are based at: QA Cinemas Web Department, Bartholemew Street, Exeter, EX4 1RD</h2></Row>
                 <Row><p></p></Row></Col>
@@ -95,7 +91,7 @@ const AboutPage = () => {
 
 
             <button onClick={() => {
-                navigate("/ContactPage.jsx");
+                navigate("/ContactPage");
             }}
             >Contacts Page
             </button>

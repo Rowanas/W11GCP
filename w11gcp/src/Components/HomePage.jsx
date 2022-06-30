@@ -7,7 +7,6 @@ const HomePage = () => {
 
     return (
         <Col>
-            <Row><h1>HomePage</h1></Row>
             <Row><img src={CinemaSplash} alt="Man in the cinema room" /></Row>
         </Col>
 

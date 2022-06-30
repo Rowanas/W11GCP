@@ -17,9 +17,9 @@ const Footer = () => {
                     <div className="col">
                         <h4>Things</h4>
                         <ul className="list-unstyled">
-                            <li><Link to="/AboutPage.jsx" className="nav__link">About</Link></li>
-                            <li><Link to="/WhatsAround.jsx" className="nav__link">Whats around us</Link></li>
-                            <li><Link to="/ContactPage.jsx" className="nav__link">Contact Page</Link></li>
+                            <li><Link to="/AboutPage" className="nav__link">About</Link></li>
+                            <li><Link to="/WhatsAround" className="nav__link">Whats around us</Link></li>
+                            <li><Link to="/ContactPage" className="nav__link">Contact Page</Link></li>
                         </ul>
                     </div>
                     <div className="col">
