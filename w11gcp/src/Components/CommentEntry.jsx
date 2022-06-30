@@ -1,15 +1,16 @@
 import express from 'express';
 import { useState } from 'react';
-import {Col, Button, Form, FormGroup, Label, Input, FormText} from reactStrap;
 import Comment from './Comment';
-const Profanity = require('bad-words');
+const Filter = require('bad-words');
+import axios from 'axios';
+
 
 //setup the defaults amd statesetters
-const CommentEntry = (commentFilled) =>   {
+const CommentEntry = () =>   {
     const [title, setTitle] = useState("");
     const [comment, setComment] = useState("");
     const [rating, setRating] = useState("");
-    profanity = new Profanity();
+    const filter = new Filter();
 
     //a spot of validation, just in case, since we talked to Morgan about it.
     const commentValid = () =>  {
@@ -23,11 +24,11 @@ const CommentEntry = (commentFilled) =>   {
         if (commentValid()) {
             const sendComment = {
                 "title": title,
-                "comment": profanity.clean(comment),
+                "comment": filter.clean(comment),
                 "rating": rating,
             };
 
-    axios.post("http://localhost:8080/createComment", sendComment)
+    axios.post("http://localhost:3000/createComment", sendComment)
             .then((response) => {
                 console.log(response);
             })

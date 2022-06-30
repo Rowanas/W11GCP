@@ -3,6 +3,7 @@ import "../NavBar.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; 
 import AboutPage from "./AboutPage";
 import ClassificationPage from "./ClassificationPage";
+import CommentsPage from "./CommentsPage";
 
 const NavigationBar = () => {
     const [active, setActive] = useState("nav__menu");
@@ -19,6 +20,7 @@ const NavigationBar = () => {
                 <a href="#" className="nav__brand">CINEMA</a>
                 <ul className={active}>
                     <li className="nav__items"><a href="./NavigationBar.jsx" className="nav__link">Home</a></li>
+                    <li className="nav__items"><Link to="/CommentsPage.jsx" className="nav__link">Comments</Link></li>
                     <li className="nav__items"><Link to="/AboutPage.jsx" className="nav__link">About</Link></li>
                     <li className="nav__items"><Link to="/ClassificationPage.jsx" className="nav__link">Classification</Link></li>
                 </ul>
@@ -29,6 +31,7 @@ const NavigationBar = () => {
                 </div>
             </nav>
             <Routes>
+                <Route path="/CommentsPage.jsx" element={<CommentsPage/>}/>    
                 <Route path="/AboutPage.jsx" element={<AboutPage/>}/>
                 <Route path="/ClassificationPage.jsx" element={<ClassificationPage/>}/>
             </Routes>

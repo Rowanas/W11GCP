@@ -20,4 +20,8 @@ const commentsSchema = Schema(
         max:[5, "Please enter a rating between 1 and 5"]
     }
     }
-)
+);
+
+const Comments = mongoose.model("Comments", commentsSchema);
+
+module.exports = Comments;
