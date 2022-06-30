@@ -1,15 +1,15 @@
 import "../Footer.css"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; 
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const Footer = () => {
-    return ( 
+    return (
         <div className="main-footer">
             <div className="container">
                 <div className="row">
                     <div className="col">
                         <h4>Cinema</h4>
                         <ul className="list-unstyled">
-                            <li>0208 444 4444</li>
+                            <li>01392 444 4444</li>
                             <li>Location Devon</li>
                             <li>122 Cinema Street</li>
                         </ul>
@@ -17,9 +17,9 @@ const Footer = () => {
                     <div className="col">
                         <h4>Things</h4>
                         <ul className="list-unstyled">
-                            <li><Link to="/AboutPage" className="nav__link">About</Link></li>
-                            <li><Link to="/Partners" className="nav__link">Partners</Link></li>
-                            <li><Link to="/ContactPage" className="nav__link">Contact Page</Link></li>
+                            <li><Link to="/AboutPage.jsx" className="nav__link">About</Link></li>
+                            <li><Link to="/WhatsAround.jsx" className="nav__link">Whats around us</Link></li>
+                            <li><Link to="/ContactPage.jsx" className="nav__link">Contact Page</Link></li>
                         </ul>
                     </div>
                     <div className="col">
@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default Footer;

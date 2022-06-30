@@ -14,8 +14,8 @@ const TestBookingsPage = () => {
     const [selectedFilm, setSelectedFilm] = useState(filmsListForBookings[0]);
     const [selectedSeats, setSelectedSeats] = useState([]);
 
-    
-    return ( 
+
+    return (
         <div className="App">
             {/* <Pricing
                 price={selectedPrice}
@@ -44,9 +44,9 @@ const TestBookingsPage = () => {
                 {selectedSeats.length * selectedFilm.price}$
                 </span>
             </p> */}
-            
+
         </div>
-     );
+    );
 }
- 
+
 export default TestBookingsPage;

@@ -11,7 +11,7 @@ import GettingHerePage from './Components/GettingHerePage';
 import Comment from "./Components/Comment";
 import ClassificationPage from './Components/ClassificationPage';
 import AboutPage from './Components/AboutPage';
-import Partners from "./Components/Partners";
+import WhatsAround from "./Components/WhatsAround";
 import ContactPage from "./Components/ContactPage";
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
             <Route path="/Comment" element={<Comment/>}/>
             <Route path="/ClassificationPage" element={<ClassificationPage/>}/>
             <Route path="/AboutPage" element={<AboutPage/>}/>
-            <Route path="/Partners" element={<Partners/>}/>
+            <Route path="/WhatsAround" element={<WhatsAround/>}/>
             <Route path="/ContactPage" element={<ContactPage/>}/> */
           </Routes>
         <Footer/>
