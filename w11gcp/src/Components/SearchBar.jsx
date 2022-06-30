@@ -1,19 +1,15 @@
 import React from "react";
 
-const SearchBar = () => {
+function SearchBar({ handleSearch }) {
     return (
-        <>
 
-            <form role="search">
-                <div>
-                    <input type="search" id="mySearch" name="q"
-                        placeholder="Search Term"
-                        aria-label="Search through site content" minlength="4" maxlength="8" />
-                    <button>Search</button>
-                </div>
-            </form>
-        </>
-    );
+        <div>
+            <button link to = "/FilmsList.jsx" onClick = {handleSearch}>Search</button>
+            <input placeholder = "Search Term" type="text" onChange={handleSearch} />
+
+        </div>
+    )
+
 }
 
 export default SearchBar;

@@ -13,6 +13,7 @@ import WhatsAround from "./Components/WhatsAround";
 import Comment from "./Components/Comment";
 import ContactPage from "./Components/ContactPage";
 import SearchBar from "./Components/SearchBar";
+import FilmList1 from "./Components/FilmList1";
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
     <div className="page-container">
       <div className="content-wrap">
       <Router>
-        <SearchBar/>
+        <FilmList1/>
         <NavigationBar/>
           <Routes>
             <Route path="/HomePage.jsx" element={<HomePage/>}/>
