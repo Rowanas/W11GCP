@@ -2,7 +2,14 @@
 
 This is our Week 11 and 12 Group Cinema Project
 
+
 ## Getting Started
+
+The software we used for coding was [Visual Studio Code](https://code.visualstudio.com/). 
+
+Our [Jira board is here](https://rowanatwork.atlassian.net/jira/software/projects/W11GCP/boards/3).
+
+Some of our initial designs were made using [Design IO](https://www.design-io.com/). 
 
 I'm not sure how we'll run it when it's built, so leaving this with placeholder.
 
