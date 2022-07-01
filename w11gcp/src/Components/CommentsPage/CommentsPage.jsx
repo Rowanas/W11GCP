@@ -3,8 +3,42 @@ import CommentsList from "./CommentsList";
 
 const CommentsPage = () => {
     return (
-        <CommentGetter />,
-        <CommentsList />
+      <>
+          <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+      <CommentGetter />,
+      <CommentsList />
+      </>
       );
 }
  

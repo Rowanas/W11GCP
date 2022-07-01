@@ -25,7 +25,6 @@ const FilmGetter = () => {
             {films.map(film =>
                 <FilmsList props={film}/>)}
         </>
-    // <FilmsList props={films}/>
     );
 }
  

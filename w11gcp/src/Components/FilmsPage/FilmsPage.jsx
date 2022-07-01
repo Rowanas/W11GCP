@@ -3,14 +3,44 @@ import FilmGetter from "./FilmGetter";
 
 const FilmsPage = () => {
 
-    return ( 
+    return (
+        <>
         <div>
-            {/* <ul>
-                {films.map(film => <FilmsList key={film.name} name={film.name}/>)}
-            </ul> */}
             <FilmGetter/>
-            {/* <h1>Hello</h1> */}
         </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                </>
      );
 }
  

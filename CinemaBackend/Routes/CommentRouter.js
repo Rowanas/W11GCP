@@ -1,9 +1,9 @@
 const express = require('express');
 const Comment = require('../Models/Comments');
 
-const router = express.Router();
+const Router = express.Router();
 
-router.get('/getAllComments', async (request, response, next) => {
+Router.get('/getAllComments', async (request, response, next) => {
     try {
         response.contentType("application/json")
             .status(200)
@@ -13,7 +13,7 @@ router.get('/getAllComments', async (request, response, next) => {
     }
 });
 
-router.get('/getCommentById/:id', async (request, response, next) => {
+Router.get('/getCommentById/:id', async (request, response, next) => {
     try {
         const id = request.params.id;
     
@@ -29,7 +29,7 @@ router.get('/getCommentById/:id', async (request, response, next) => {
     }
 });
 
-router.post('/createComment', async (request, response, next) => {
+Router.post('/createComment', async (request, response, next) => {
     try {
         if (Object.keys(request.body).length == 0) return next({
             statusCode: 400,
@@ -45,14 +45,14 @@ router.post('/createComment', async (request, response, next) => {
     }
 });
 
-router.delete('/deleteComment/:id', async (request, response, next) => {
+Router.delete('/deleteComment/:id', async (request, response, next) => {
     try {
         const id = request.params.id;
     
         const comment = await Comment.findByIdAndDelete(id);
     
         if (comment) {
-            response.status(204).json(film);
+            response.status(204).json(comment);
         } else {
             next({ statusCode: 404, message: `Comment with id ${request.params.id} does not exist` });
         }
@@ -61,4 +61,4 @@ router.delete('/deleteComment/:id', async (request, response, next) => {
     }
 });
 
-module.exports = CommentRouter;
+module.exports = Router;
