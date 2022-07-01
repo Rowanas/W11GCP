@@ -13,7 +13,7 @@ const WhatsAround = () => {
             <Container>
 
                 <Col>
-                    <Row> <h1> Where to go before and after you come to us</h1></Row>
+                    <Row> <h1> Where to go before and after you come to us!</h1></Row>
                     <Row><p>We have some beautiful bars and resturants you can visit before and after your chosen movie with us, please see each resturant or bar below for more infomation </p></Row>
                 </Col>
 
@@ -21,10 +21,10 @@ const WhatsAround = () => {
                     <Row><h1>Resturant</h1></Row>
                     <Row><h2>Eat the Bird</h2></Row>
                     <Row><img src={EattheBird} alt="Eat the Bird" /></Row>
-                    <Row><p>Here at Eat the Bird we are known for the best chicken and burger place in all of Exeter. Head on over here for some lunch or dinner before or after your movie.</p></Row>
+                    <Row><p>Here at Eat the Bird we are known as the best chicken and burger place in all of Exeter. Head on over here for some lunch or dinner before or after your movie.</p></Row>
                     <Row><h2>Current offers</h2></Row>
                     <Row><p>Im sorry, we dont currently have any offers in conjunction with the Cinema right now, please check back another time.</p></Row>
-                    <Row><p>We are currently accepting Blue light cards fro 15% all meals eaten in.</p></Row>
+                    <Row><p>We are currently accepting Blue light cards for 15% all meals eaten in.</p></Row>
                     <Row><h2>Contact Details</h2></Row>
                     <Row><h2>EXETER</h2></Row>
                     <Row><p>183 Sidwell Street, EX4 6RD</p></Row>
@@ -38,7 +38,7 @@ const WhatsAround = () => {
                     <Row><h1>Resturant</h1></Row>
                     <Row><h2>Firezza</h2></Row>
                     <Row><img src={Firezza} alt="Pizza Resturant" /></Row>
-                    <Row><p>Firezza is just the fuel you need before or after your movie experience. find out how to get to us and we look forward to seeing you soon.</p></Row>
+                    <Row><p>Firezza is just the fuel you need before or after your movie experience. Find out how to get to us and we look forward to seeing you soon.</p></Row>
                     <Row><h2>Current offers</h2></Row>
                     <Row><p>For PRIDE month we are offering a 3% discount with every Pizza inch you order (Max 14") </p></Row>
                     <Row><h2>Contact Details</h2></Row>
@@ -69,7 +69,7 @@ const WhatsAround = () => {
                     <Row><img src={TallyHo} alt="Tally Ho Pub" /></Row>
                     <Row><p> Hello there, going for a movie eh? why not take a saunter down here and have some tasty drinks and nibbles, Tally Ho then.</p></Row>
                     <Row><h2>Current offers</h2></Row>
-                    <Row><p> If you come on down and its your birthday you can claim 1 free drink for yourself up to the value of £7.99 (Must have ID) </p></Row>
+                    <Row><p> If you come on down and it's your birthday you can claim 1 free drink for yourself up to the value of £7.99 (Must have ID) </p></Row>
                     <Row><h2>Contact Details</h2></Row>
                     <Row><h2>TOTNES</h2></Row>
                     <Row><p>Littlehempston, Totnes TQ9 6LY</p></Row>

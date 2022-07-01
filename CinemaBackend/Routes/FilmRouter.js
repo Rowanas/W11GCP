@@ -3,7 +3,7 @@ const Film = require('../Models/Films');
 
 const Router = express.Router();
 
-Router.get('/getAllFilms', async (request, response, next) => {
+Router.get('/getAll', async (request, response, next) => {
     try {
         response.contentType("application/json")
             .status(200)

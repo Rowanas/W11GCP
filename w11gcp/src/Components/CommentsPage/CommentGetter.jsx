@@ -4,14 +4,13 @@ import CommentsList from "./CommentsList";
 
 const CommentGetter = () => {
     const [comments, setComments] = useState([]);
-    const URL = "http://localhost:3000/getAllComments";
 
     useEffect(() => {
         getAllComments();
     }, []);
 
     const getAllComments = () => {
-        axios.get(`${URL}/getAll`)
+        axios.get(`http://localhost:3000/comment/getAll`)
         .then((response) => {
             const allComments = response.data
             setComments(allComments);

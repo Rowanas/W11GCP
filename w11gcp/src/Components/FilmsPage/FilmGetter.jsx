@@ -4,14 +4,13 @@ import FilmsList from "./FilmsList";
 
 const FilmGetter = () => {
     const [films, setFilms] = useState([]);
-    const URL = "http://localhost:3000/film";
 
     useEffect(() => {
         getAllFilms();
     }, []);
 
     const getAllFilms = () => {
-        axios.get(`${URL}/getAll`)
+        axios.get(`http://localhost:3000/film/getAll`)
         .then((response) => {
             const allFilms = response.data
             setFilms(allFilms);
