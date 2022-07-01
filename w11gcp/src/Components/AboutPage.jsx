@@ -1,15 +1,17 @@
 import React from 'react'
 import { Container, Row, Col } from "reactstrap";
 import { useNavigate } from "react-router-dom";
+import ClassificationPage from './ClassificationPage';
 
 const AboutPage = () => {
     let navigate = useNavigate();
-
+    
     return (
         <>
-
-            <p />
-            <Container>                
+       
+        <p/>
+            <Container>
+                
             <Row>
                 <Col><h2>Who are you?</h2></Col>
                 <Col><h2>Who are you?</h2></Col>
@@ -83,15 +85,20 @@ const AboutPage = () => {
                 </Row>
 
 
+
+
+                
+
                 <Col>
                 <Row><h2>We are based at: QA Cinemas Web Department, Bartholemew Street, Exeter, EX4 1RD</h2></Row>
+                <Row>We used a "scrum" methodology in creating this website. Our team leader was known as the "scrum master" and the team member responsible for maintaining our file structure and project management was known as the "product owner"</Row>
                 <Row><p></p></Row></Col>
             </Container>
 
 
 
             <button onClick={() => {
-                navigate("/ContactPage");
+                navigate("/ContactPage.jsx");
             }}
             >Contacts Page
             </button>
