@@ -15,19 +15,11 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="col">
-                        <h4>Things</h4>
+                        <h4>Additional Links</h4>
                         <ul className="list-unstyled">
                             <li><Link to="/AboutPage" className="nav__link">About</Link></li>
-                            <li><Link to="/WhatsAround" className="nav__link">Whats around us</Link></li>
+                            <li><Link to="/WhatsAround" className="nav__link">What's around</Link></li>
                             <li><Link to="/ContactPage" className="nav__link">Contact Page</Link></li>
-                        </ul>
-                    </div>
-                    <div className="col">
-                        <h4>LAST BIT</h4>
-                        <ul className="list-unstyled">
-                            <li>THINGS</li>
-                            <li>MORE THINGS</li>
-                            <li>LAST THING</li>
                         </ul>
                     </div>
                 </div>

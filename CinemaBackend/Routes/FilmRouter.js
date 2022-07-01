@@ -1,9 +1,9 @@
 const express = require('express');
 const Film = require('../Models/Films');
 
-const router = express.Router();
+const Router = express.Router();
 
-router.get('/getAll', async (request, response, next) => {
+Router.get('/getAllFilms', async (request, response, next) => {
     try {
         response.contentType("application/json")
             .status(200)
@@ -13,7 +13,7 @@ router.get('/getAll', async (request, response, next) => {
     }
 });
 
-router.get('/getById/:id', async (request, response, next) => {
+Router.get('/getFilmById/:id', async (request, response, next) => {
     try {
         const id = request.params.id;
     
@@ -30,7 +30,7 @@ router.get('/getById/:id', async (request, response, next) => {
     }
 });
 
-router.post('/create', async (request, response, next) => {
+Router.post('/createFilm', async (request, response, next) => {
     try {
         if (Object.keys(request.body).length == 0) return next({
             statusCode: 400,
@@ -46,7 +46,7 @@ router.post('/create', async (request, response, next) => {
     }
 });
 
-router.put('/update/:id', async (request, response, next) => {
+Router.put('/updateFilm/:id', async (request, response, next) => {
     try {
         if (Object.keys(request.body).length == 0) return next({
             statusCode: 400,
@@ -70,7 +70,7 @@ router.put('/update/:id', async (request, response, next) => {
     }
 });
 
-router.delete('/delete/:id', async (request, response, next) => {
+Router.delete('/deleteFilm/:id', async (request, response, next) => {
     try {
         const id = request.params.id;
     
@@ -86,4 +86,4 @@ router.delete('/delete/:id', async (request, response, next) => {
     }
 });
 
-module.exports = router;
+module.exports = Router;

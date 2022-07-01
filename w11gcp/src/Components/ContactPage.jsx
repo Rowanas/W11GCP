@@ -1,8 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from "reactstrap";
 import { useNavigate } from "react-router-dom";
-import { useState } from 'react';
-import { submit} from 'react';
+import { useState, submit } from 'react';
 
 
 const ContactPage = () => {

@@ -1,13 +1,10 @@
-// import { useState } from "react";
-import FilmGetter from "./FilmGetter";
+import CommentGetter from "./CommentGetter";
+import CommentsList from "./CommentsList";
 
-const FilmsPage = () => {
-
+const CommentsPage = () => {
     return (
-        <>
-        <div>
-            <FilmGetter/>
-        </div>
+      <>
+          <br/>
                 <br/>
                 <br/>
                 <br/>
@@ -39,9 +36,10 @@ const FilmsPage = () => {
                 <br/>
                 <br/>
                 <br/>
-                <br/>
-                </>
-     );
+      <CommentGetter />,
+      <CommentsList />
+      </>
+      );
 }
  
-export default FilmsPage;
+export default CommentsPage;

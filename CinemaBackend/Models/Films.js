@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const schema = mongoose.Schema;
 
-const filmSchema = new Schema(
+const filmSchema = new schema(
     {
         filmName: {
             type: String,
@@ -45,14 +45,14 @@ const filmSchema = new Schema(
             min: 100,
             required: [true, "Synopsis is required"]
         },
-        images: {
+        image: {
             type: String,
             required: [true, "A picture of a film is required"]
         },
         comments: [
             {
-                type: String,
-            }
+                type: String
+            },
         ]
     }
 );
