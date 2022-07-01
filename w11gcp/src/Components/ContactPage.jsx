@@ -6,15 +6,28 @@ import { submit} from 'react';
 
 
 const ContactPage = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-    const [emailSent, setEmailSent] = useState(false);
+const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+const [message, setMessage] = useState('');
+const [emailSent, setEmailSent] = useState(false);
     let navigate = useNavigate();
+
+    const submit = () => {
+        if (name && email && message) {
+           // TODO - send mail
+    
+            setName('');
+            setEmail('');
+            setMessage('');
+            setEmailSent(true);
+        } else {
+            alert('Please fill in all fields.');
+        }
+    }
     return ( 
         <>
-
-            <p />
+       
+        <p/>
             <Container>
 
             <Col>
@@ -29,10 +42,10 @@ const ContactPage = () => {
                 <Row><h2>Phone number: 01392 444 4444</h2></Row>
               
                 </Col>
-            </Container>
-
+                </Container>
+               
         </>
-    );
+     );
 }
-
+ 
 export default ContactPage;
