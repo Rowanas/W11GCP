@@ -6,7 +6,7 @@ const OpeningTimes = () => {
             <p>
                 Please see below for the Cinema opening times.
             </p>
-            
+
             <table>
                 <tbody>
                     <tr>

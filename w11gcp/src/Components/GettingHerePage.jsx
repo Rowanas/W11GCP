@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row, Col} from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Train from "../Resources/Train.JPG";
 import CinemaMap from "../Resources/CinemaMap.JPG";

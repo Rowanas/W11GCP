@@ -13,15 +13,15 @@ const NavigationBar = () => {
         }
     return (
             <nav className="navBar">
-                <h2 className="nav__brancd"><Link to="/HomePage.jsx" className="nav__brand">Cinema</Link></h2>
+                <h2 className="nav__brand"><Link to="/" className="nav__brand">Cinema</Link></h2>
                 <ul className={active}>
-                    <li className="nav__items"><Link to="/HomePage.jsx" className="nav__link">Home</Link></li>
-                    <li className="nav__items"><Link to="/FilmsList.jsx" className="nav__link">Films</Link></li>
-                    <li className="nav__items"><Link to="/BookingPage.jsx" className="nav__link">Bookings</Link></li>
-                    <li className="nav__items"><Link to="/Screens.jsx" className="nav__link">Screens</Link></li>
-                    <li className="nav__items"><Link to="/GettingHerePage.jsx" className="nav__link">Getting Here</Link></li>
-                    <li className="nav__items"><Link to="/Comment.jsx" className="nav__link">Discussion Board</Link></li>
-                    <li className="nav__items"><Link to="/ClassificationPage.jsx" className="nav__link">Classification</Link></li>
+                    <li className="nav__items"><Link to="/" className="nav__link">Home</Link></li>
+                    <li className="nav__items"><Link to="/FilmsPage" className="nav__link">Films</Link></li>
+                    <li className="nav__items"><Link to="/BookingPage" className="nav__link">Bookings</Link></li>
+                    <li className="nav__items"><Link to="/Screens" className="nav__link">Screens</Link></li>
+                    <li className="nav__items"><Link to="/GettingHerePage" className="nav__link">Getting Here</Link></li>
+                    <li className="nav__items"><Link to="/CommentsPage/CommentsPage" className="nav__link">Discussion Board</Link></li>
+                    <li className="nav__items"><Link to="/ClassificationPage" className="nav__link">Classification</Link></li>
                 </ul>
                 <div onClick = {navToggle} className={toggleIcon}>
                     <div className="line1"></div>

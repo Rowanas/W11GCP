@@ -1,8 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from "reactstrap";
 import { useNavigate } from "react-router-dom";
-import { useState } from 'react';
-import { submit} from 'react';
+import { useState, submit } from 'react';
 
 
 const ContactPage = () => {
@@ -11,6 +10,19 @@ const [email, setEmail] = useState('');
 const [message, setMessage] = useState('');
 const [emailSent, setEmailSent] = useState(false);
     let navigate = useNavigate();
+
+    const submit = () => {
+        if (name && email && message) {
+           // TODO - send mail
+    
+            setName('');
+            setEmail('');
+            setMessage('');
+            setEmailSent(true);
+        } else {
+            alert('Please fill in all fields.');
+        }
+    }
     return ( 
         <>
        

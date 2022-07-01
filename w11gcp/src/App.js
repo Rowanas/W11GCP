@@ -1,40 +1,40 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
 import './App.css';
-import HomePage from "./Components/HomePage";
-import AboutPage from './Components/AboutPage';
-import ClassificationPage from './Components/ClassificationPage';
 import NavigationBar from './Components/NavigationBar'
 import Footer from './Components/Footer';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
-import GettingHerePage from './Components/GettingHerePage';
+import FilmsPage from "./Components/FilmsPage/FilmsPage";
+import HomePage from "./Components/HomePage";
 import BookingsPage from "./Components/BookingPage/BookingPage";
 import Screens from "./Components/Screens";
-import Partners from "./Components/Partners";
-import Comment from "./Components/Comment";
+import GettingHerePage from './Components/GettingHerePage';
+import CommentsPage from "./Components/CommentsPage/CommentsPage";
+import ClassificationPage from './Components/ClassificationPage';
+import AboutPage from './Components/AboutPage';
+import WhatsAround from "./Components/WhatsAround";
 import ContactPage from "./Components/ContactPage";
-import SearchBar from "./Components/SearchBar";
-import { useState } from 'react';
-
+import FilmList1 from "./Components/FilmList1";
+import CinemaSplash from "./Resources/CinemaSplash.jpg";
 
 function App() {
   return (
 
     <div className="page-container">
-      <div className="content-wrap">
+      <div className="content-wrap" style={{ backgroundImage: `url(${CinemaSplash})`, width: '100%', height: '100%', backgroundSize: 'cover', alignItems: 'stretch'}}>
       <Router>
-        <SearchBar/>
+        <FilmList1/>
         <NavigationBar/>
           <Routes>
-            <Route path="/HomePage.jsx" element={<HomePage/>}/>
-            <Route path="/BookingPage.jsx" element={<BookingsPage/>}/>
-            <Route path="/Screens.jsx" element={<Screens/>}/>
-            <Route path="/GettingHerePage.jsx" element={<GettingHerePage/>}/>
-            <Route path="/Comment.jsx" element={<Comment/>}/>
-            <Route path="/ClassificationPage.jsx" element={<ClassificationPage/>}/>
-            <Route path="/AboutPage.jsx" element={<AboutPage/>}/>
-            <Route path="/Partners.jsx" element={<Partners/>}/>
-            <Route path="/ContactPage.jsx" element={<ContactPage/>}/>
-          
+            <Route index path="/" element={<HomePage/>}/>
+            <Route path="/BookingPage" element={<BookingsPage/>}/>
+            <Route path="/FilmsPage" element={<FilmsPage/>}/>
+            <Route path="/Screens" element={<Screens/>}/>
+            <Route path="/GettingHerePage" element={<GettingHerePage/>}/>
+            <Route path="/CommentsPage" element={<CommentsPage/>}/>
+            <Route path="/ClassificationPage" element={<ClassificationPage/>}/>
+            <Route path="/AboutPage" element={<AboutPage/>}/>
+            <Route path="/WhatsAround" element={<WhatsAround/>}/>
+            <Route path="/ContactPage" element={<ContactPage/>}/> */
           </Routes>
         <Footer/>
       </Router>

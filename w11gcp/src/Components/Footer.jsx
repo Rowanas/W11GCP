@@ -1,8 +1,8 @@
 import "../Footer.css"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; 
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const Footer = () => {
-    return ( 
+    return (
         <div className="main-footer">
             <div className="container">
                 <div className="row">
@@ -15,19 +15,11 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="col">
-                        <h4>Things</h4>
+                        <h4>Additional Links</h4>
                         <ul className="list-unstyled">
-                            <li><Link to="/AboutPage.jsx" className="nav__link">About</Link></li>
-                            <li><Link to="/Partners.jsx" className="nav__link">Partners</Link></li>
-                            <li><Link to="/ContactPage.jsx" className="nav__link">Contact Page</Link></li>
-                        </ul>
-                    </div>
-                    <div className="col">
-                        <h4>LAST BIT</h4>
-                        <ul className="list-unstyled">
-                            <li>THINGS</li>
-                            <li>MORE THINGS</li>
-                            <li>LAST THING</li>
+                            <li><Link to="/AboutPage" className="nav__link">About</Link></li>
+                            <li><Link to="/WhatsAround" className="nav__link">What's around</Link></li>
+                            <li><Link to="/ContactPage" className="nav__link">Contact Page</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -39,7 +31,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default Footer;

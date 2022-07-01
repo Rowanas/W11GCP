@@ -34,21 +34,21 @@ const AboutPage = () => {
 
                 
                 <Row>
-                <Col><h2>Abit about you</h2></Col>
-                <Col><h2>Abit about you</h2></Col>
-                <Col><h2>Abit about you</h2></Col>
-                <Col><h2>Abit about you</h2></Col>
-                <Col><h2>Abit about you</h2></Col>
+                <Col><h2>A bit about you</h2></Col>
+                <Col><h2>A bit about you</h2></Col>
+                <Col><h2>A bit about you</h2></Col>
+                <Col><h2>A bit about you</h2></Col>
+                <Col><h2>A bit about you</h2></Col>
                 </Row>
                 
 
                 
                 <Row>
-                <Col><p>Im a new developer and have alongside my team created this site</p></Col>
-                <Col><p>Im a new developer with experience in Python, and I have alongside my team created this site</p></Col>
-                <Col><p>Im a new developer and have alongside my team created this site</p></Col>
-                <Col><p>Im a new developer but have alot of experience with technology</p></Col>
-                <Col><p>Ive had experience in the past with frontend work years ago and have refreshed my skills which has allowed me to alongside my team create this site</p></Col>
+                <Col><p>I'm a new developer and have, alongside my team created this site.</p></Col>
+                <Col><p>I'm a new developer with experience in Python, and I have alongside my team created this site.</p></Col>
+                <Col><p>I'm a new developer and have, alongside my team created this site.</p></Col>
+                <Col><p>I'm a new developer but have a lot of experience with technology.</p></Col>
+                <Col><p>I've had experience in the past with frontend work years ago and have refreshed my skills which has allowed me to alongside my team create this site.</p></Col>
                 </Row>
                 
                 
@@ -91,6 +91,7 @@ const AboutPage = () => {
 
                 <Col>
                 <Row><h2>We are based at: QA Cinemas Web Department, Bartholemew Street, Exeter, EX4 1RD</h2></Row>
+                <Row>We used a "scrum" methodology in creating this website. Our team leader was known as the "scrum master" and the team member responsible for maintaining our file structure and project management was known as the "product owner"</Row>
                 <Row><p></p></Row></Col>
             </Container>
 

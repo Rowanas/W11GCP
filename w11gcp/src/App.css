@@ -69,6 +69,7 @@ color: white;
   margin: 1px;
 }
 
+<<<<<<< HEAD
 .nav__link  {
   color:aqua;
   }
@@ -85,11 +86,14 @@ a:link:hover  {
 color:whitesmoke;
 }
 
+=======
+>>>>>>> 949aa81ab2acf157c7b27707c5d43dc4b4038bd2
 .screen {
   align-items: center;
   text-align: center;
   background-color: #42579A;
   overflow: hidden;
+<<<<<<< HEAD
   padding: 3px;
 }
 
@@ -102,3 +106,8 @@ color:whitesmoke;
 .screentog  {
 display:flex;
 }
+=======
+}
+
+
+>>>>>>> 949aa81ab2acf157c7b27707c5d43dc4b4038bd2
