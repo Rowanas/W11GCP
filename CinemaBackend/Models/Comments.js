@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// With a spot of validation in here, plus the validation on the entry fields
-const commentsSchema = Schema(
+const commentsSchema = new Schema(
+
     {
     title:    {
         type: String,
@@ -20,8 +20,10 @@ const commentsSchema = Schema(
         max:[5, "Please enter a rating between 1 and 5"]
     }
     }
-);
 
 const Comments = mongoose.model("Comments", commentsSchema);
 
 module.exports = Comments;
+
+);
+

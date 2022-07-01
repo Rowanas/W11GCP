@@ -1,19 +1,23 @@
 const express = require('express');
 const Comment = require('../Models/Comments');
 
+
 const Router = express.Router();
 
 Router.get('/getAllComments', async (request, response, next) => {
+
     try {
         response.contentType("application/json")
             .status(200)
             .json(await Comment.find().populate());
+
     } catch (error) {
         next(error);
     }
 });
 
 Router.get('/getCommentById/:id', async (request, response, next) => {
+
     try {
         const id = request.params.id;
     
@@ -30,6 +34,7 @@ Router.get('/getCommentById/:id', async (request, response, next) => {
 });
 
 Router.post('/createComment', async (request, response, next) => {
+
     try {
         if (Object.keys(request.body).length == 0) return next({
             statusCode: 400,
@@ -40,6 +45,7 @@ Router.post('/createComment', async (request, response, next) => {
         await comment.save();
 
         response.status(201).json(comment);
+
     } catch (error) {
         next(error);
     }
@@ -62,3 +68,4 @@ Router.delete('/deleteComment/:id', async (request, response, next) => {
 });
 
 module.exports = Router;
+

@@ -4,6 +4,7 @@ const Film = require('../Models/Films');
 const Router = express.Router();
 
 Router.get('/getAll', async (request, response, next) => {
+
     try {
         response.contentType("application/json")
             .status(200)
@@ -31,6 +32,7 @@ Router.get('/getFilmById/:id', async (request, response, next) => {
 });
 
 Router.post('/createFilm', async (request, response, next) => {
+
     try {
         if (Object.keys(request.body).length == 0) return next({
             statusCode: 400,
@@ -47,6 +49,7 @@ Router.post('/createFilm', async (request, response, next) => {
 });
 
 Router.put('/updateFilm/:id', async (request, response, next) => {
+
     try {
         if (Object.keys(request.body).length == 0) return next({
             statusCode: 400,
@@ -71,6 +74,7 @@ Router.put('/updateFilm/:id', async (request, response, next) => {
 });
 
 Router.delete('/deleteFilm/:id', async (request, response, next) => {
+
     try {
         const id = request.params.id;
     
@@ -87,3 +91,4 @@ Router.delete('/deleteFilm/:id', async (request, response, next) => {
 });
 
 module.exports = Router;
+
