@@ -60,3 +60,45 @@ color: white;
   transform-origin: 50% 100%;
   box-shadow: 0 0 100px 1px rgba(100,100,100,.4);
 }
+
+.row  {
+  align-items: center;
+  text-align: center;
+  background-color: #42579A;
+  margin: #8E9AC2;
+  margin: 1px;
+}
+
+.nav__link  {
+  color:aqua;
+  }
+
+.nav__link:hover  {
+color:whitesmoke;
+}
+
+a:link  {
+  color:aqua;
+  }
+
+a:link:hover  {
+color:whitesmoke;
+}
+
+.screen {
+  align-items: center;
+  text-align: center;
+  background-color: #42579A;
+  overflow: hidden;
+  padding: 3px;
+}
+
+.screenPic {
+  padding-bottom: 3%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+.screentog  {
+display:flex;
+}
