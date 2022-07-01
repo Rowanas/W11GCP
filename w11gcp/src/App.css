@@ -7,10 +7,10 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-header {
@@ -22,6 +22,24 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+/* Additional styling for header and footer once complete */
+overflow: hidden;
+background-image: (linear-gradient(270deg, #8E9AC2, #42579A));
+background-size: 400% 400%;
+animation: Transition 10s ease infinite;
+transition: 1s
+/* more required, still understanding code */
+}
+
+.App-footer {
+background-color: #282c34;
+max-height: 0vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: calc(10px + 2vmin);
+color: white;
 }
 
 .App-link {
@@ -35,4 +53,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.movie  {
+  transition: transform 1s linear,box-shadow 1s linear;
+  transform-origin: 50% 100%;
+  box-shadow: 0 0 100px 1px rgba(100,100,100,.4);
+}
+
+.row  {
+  align-items: center;
+  text-align: center;
+  background-color: #42579A;
+  margin: #8E9AC2;
+  margin: 1px;
+}
+
+.nav__link  {
+  color:aqua;
+  }
+
+.nav__link:hover  {
+color:whitesmoke;
+}
+
+a:link  {
+  color:aqua;
+  }
+
+a:link:hover  {
+color:whitesmoke;
+}
+
+.screen {
+  align-items: center;
+  text-align: center;
+  background-color: #42579A;
+  overflow: hidden;
+  padding: 3px;
+}
+
+.screenPic {
+  padding-bottom: 3%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+.screentog  {
+display:flex;
 }
