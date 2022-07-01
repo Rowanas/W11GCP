@@ -14,8 +14,8 @@ const filmSchema = new schema(
         },
         runningTime: {
             type: String,
-            min: 9,
-            max: 9,
+            min: 1,
+            max: 1,
             required: [true, "Running time is required"]
         },
         directorName: {

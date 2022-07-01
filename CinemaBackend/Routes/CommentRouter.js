@@ -1,19 +1,23 @@
 const express = require('express');
 const Comment = require('../Models/Comments');
 
-const router = express.Router();
 
-router.get('/getAllComments', async (request, response, next) => {
+const Router = express.Router();
+
+Router.get('/getAllComments', async (request, response, next) => {
+
     try {
         response.contentType("application/json")
             .status(200)
             .json(await Comment.find().populate());
-    } catch (err) {
-        next(err);
+
+    } catch (error) {
+        next(error);
     }
 });
 
-router.get('/getCommentById/:id', async (request, response, next) => {
+Router.get('/getCommentById/:id', async (request, response, next) => {
+
     try {
         const id = request.params.id;
     
@@ -24,12 +28,13 @@ router.get('/getCommentById/:id', async (request, response, next) => {
         } else {
             next({ statusCode: 404, message: `Comment with id ${request.params.id} does not exist` });
         }
-    } catch (err) {
-        next(err);
+    } catch (error) {
+        next(error);
     }
 });
 
-router.post('/createComment', async (request, response, next) => {
+Router.post('/createComment', async (request, response, next) => {
+
     try {
         if (Object.keys(request.body).length == 0) return next({
             statusCode: 400,
@@ -40,25 +45,27 @@ router.post('/createComment', async (request, response, next) => {
         await comment.save();
 
         response.status(201).json(comment);
-    } catch (err) {
-        next(err);
+
+    } catch (error) {
+        next(error);
     }
 });
 
-router.delete('/deleteComment/:id', async (request, response, next) => {
+Router.delete('/deleteComment/:id', async (request, response, next) => {
     try {
         const id = request.params.id;
     
         const comment = await Comment.findByIdAndDelete(id);
     
         if (comment) {
-            response.status(204).json(film);
+            response.status(204).json(comment);
         } else {
             next({ statusCode: 404, message: `Comment with id ${request.params.id} does not exist` });
         }
-    } catch (err) {
-        next(err);
+    } catch (error) {
+        next(error);
     }
 });
 
-module.exports = CommentRouter;
+module.exports = Router;
+
